@@ -1,0 +1,24 @@
+<form [formGroup]="form">
+
+  <div>
+    <label>
+      Nome do aluno
+      <br />
+      <input  type="text" placeholder="João Gilberto" formControlName="nome" />
+    </label>
+  </div>
+
+
+  <div>
+    <label>
+      CPF
+      <br />
+      <input type="text" placeholder="849.695.590-44" formControlName="cpf" />
+    </label>
+  </div>
+
+
+  <div>
+    <button (click)="registrar()">Registrar</button>
+  </div>
+</form>
